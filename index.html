@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LINQ Visual Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>LINQ Visual Query Builder</h1>
+
+    <h3>Paste JSON Data</h3>    
+    <textarea id="jsonInput" rows="8"></textarea>
+    <button onclick="loadData()">Load Data</button>
+
+    <div id="filterSection" style="display:none;">
+        <h3>Filter</h3>
+        <select id="fieldSelect"></select>
+        <select id="operatorSelect">
+            <option value=">">></option>
+            <option value="<"><</option>
+            <option value="==">==</option>
+        </select>
+        <input type="text" id="valueInput" placeholder="Value">
+        <button onclick="applyFilter()">Apply Filter</button>
+    </div>
+
+    <h3>Result</h3>
+    <pre id="resultOutput"></pre>
+
+    <h3>Generated C# LINQ Code</h3>
+    <pre id="linqOutput"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
