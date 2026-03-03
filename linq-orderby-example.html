@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LINQ OrderBy Example in C# | Dev Toolkit</title>
+  <meta name="description" content="Learn how to use LINQ OrderBy and OrderByDescending in C# with practical examples.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>LINQ OrderBy Example in C#</h1>
+
+<p>
+OrderBy is used in LINQ to sort elements in ascending order based on a key.
+It is commonly used when working with collections in C#.
+</p>
+
+<h2>Basic Syntax</h2>
+
+<pre>
+var sorted = data.OrderBy(x => x.Age);
+</pre>
+
+<h2>OrderByDescending Example</h2>
+
+<pre>
+var sorted = data.OrderByDescending(x => x.Age);
+</pre>
+
+<h2>Practical Example</h2>
+
+<pre>
+var students = data
+    .Where(x => x.Age > 20)
+    .OrderBy(x => x.Name)
+    .Select(x => new { x.Name, x.Age });
+</pre>
+
+<p>
+You can test and generate LINQ queries visually using our
+<a href="index.html">Free LINQ Query Builder Tool</a>.
+</p>
+
+</body>
+</html>

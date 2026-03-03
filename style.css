@@ -104,3 +104,14 @@ pre {
     color: #aaa;
     margin-top: 5px;
 }
+.seo-intro {
+    margin-bottom: 40px;
+    max-width: 900px;
+}
+.seo-intro h2 {
+    margin-top: 25px;
+}
+.seo-intro p {
+    line-height: 1.6;
+    color: #cccccc;
+}
