@@ -199,3 +199,8 @@ function showError(error) {
     document.getElementById("jsonOutputArea").textContent =
         "Invalid JSON ❌\n\n" + error.message;
 }
+function copyLinq() {
+    const code = document.getElementById("linqOutput").textContent;
+    if (!code) return;
+    navigator.clipboard.writeText(code);
+}
